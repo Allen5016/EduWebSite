@@ -173,7 +173,7 @@ ol {
   width: 100%;
   background: #FFFFFF;
   border-bottom: 1px #F5F5F5 solid;
-  height: 98px;
+  height: 120px;
 }
 .page_bottom {
   width: 100%;
@@ -185,9 +185,9 @@ ol {
   text-align: center;
 }
 .m-name {
-  background: url(Content/Images/name.png) no-repeat left top;
+  background: url(Content/Images/name.png) no-repeat left bottom;
   width: 500px;
-  height: 99px;
+  height: 120px;
   overflow: hidden;
   float: left;
   display: inline-block;
@@ -195,7 +195,7 @@ ol {
 .m-logo {
   background: url(Content/Images/logo.png) no-repeat left top;
   width: 90px;
-  height: 67px;
+  height: 100px;
   margin-top: 12px;
   margin-right: 15px;
   overflow: hidden;

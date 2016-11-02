@@ -66,7 +66,7 @@ class HomeController extends Controller {
             'eItem'=>'QRcode'
         ])->select();
           $pic = M('picture')->where([
-                $code[0]['picture']
+               'id'=> $code[0]['picture']
             ])->select();
             $code[0]['headPic']=$pic[0]['path'];
         $this->phone=$phone[0];
