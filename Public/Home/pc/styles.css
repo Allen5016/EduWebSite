@@ -388,6 +388,7 @@ ol {
   -webkit-text-size-adjust: none;
   font-size: 12px;
   color: #AAC135;
+  margin-top: 10px;
 }
 .floatR,
 .smore {
@@ -1127,7 +1128,7 @@ ol {
   color: #AAC135;
 }
 .campus .contents {
-  padding: 2px 2px;
+  padding: 1px 1px;
 }
 .campus li {
   width: 295px;
@@ -1135,7 +1136,6 @@ ol {
   overflow: hidden;
   float: left;
   text-align: center;
-  margin: 3px;
 }
 .campus .img {
   width: 295px;
@@ -1249,12 +1249,12 @@ ol {
   line-height: 30px;
 }
 .tea_list .add {
-  background: url(/Content/Images/icon.png) no-repeat left -3px;
+  background: url(Content/Images/icon.png) no-repeat left -3px;
   line-height: 24px;
   padding-left: 15px;
 }
 .tea_list .tell {
-  background: url(/Content/Images/icon_1.png) no-repeat left top;
+  background: url(Content/Images/icon_1.png) no-repeat left top;
   padding-left: 15px;
 }
 .tea_list .school_tips {
@@ -1267,7 +1267,7 @@ ol {
   bottom: 20px;
   padding-left: 22px;
   right: 0;
-  background: url(/Content/Images/school_tips.png) no-repeat left top;
+  background: url(Content/Images/school_tips.png) no-repeat left top;
 }
 .school_detail {
   width: 100%;
@@ -1351,7 +1351,7 @@ ol {
   border-bottom: 1px #3992d0 solid;
 }
 .traffic .title {
-  background: url(/Content/Images/traffic_bg.jpg) no-repeat left top;
+  background: url(Content/Images/traffic_bg.jpg) no-repeat left top;
   display: block;
   line-height: 35px;
   height: 36px;

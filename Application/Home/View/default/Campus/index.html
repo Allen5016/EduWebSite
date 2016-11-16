@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <include file="Public/head"/>
+</head>
+<body>
+<!-- 头部 -->
+<include file="Public/header"/>
+<!-- /头部 -->
+
+<div class="page">
+    <div class="main">
+
+        <!--菜单-->
+        <include file="Public/menu"/>
+        <!--菜单-->
+
+        <!--左侧模块-->
+        <div class="col-left">
+            <div class="search_list">
+                <dt>区域：</dt>
+                <dd>
+                    <span class="search_current"><a class="search_link" href="/campus/0-1.html">不限</a></span>
+
+                </dd>
+            </div>
+            <div class="contents">
+                <volist name="data" id="vo">
+                <dl class="tea_list fix">
+                    <dt>
+                        <a href="{:U('info',array('id'=>$vo['id']))}" target="_blank"><img src="{$vo.headPic}"></a>
+                    </dt>
+                    <dd>
+                        <h5><a href="{:U('info',array('id'=>$vo['id']))} target="_blank">{$vo.name}</a></h5>
+                        <p class="add">{$vo.address}</p>
+                        <p class="tell">{$vo.phone}</p>
+                        <div class="school_tips">福州市</div>
+                    </dd>
+                </dl>
+                </volist>
+            </div>
+
+
+        </div>
+        <!--右侧模块-->
+        <div class="col-right">
+            <div class="right_ad"><a href="http://ikx.xinghuojiaoyu.net/" target="_blank"><img src="http://file.xinghuo100.com/upload/25/75/76/98/image/20160118/20160118101720_3491.jpg" alt=""></a></div>
+            <div class="right_ad"><a href="http://www.xinghuo100.com/zhuanti/qiuji2016/fuzhou/qiuji2016.html" target="_blank"><img src="http://file.xinghuo100.com/upload/25/924/936/944/image/20160913/20160913094947_4610.jpg" alt=""></a></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+</div>
+
+<include file="Public/friendship"/>
+<include file="Public/navigation"/>
+<!-- 底部 -->
+<include file="Public/footer"/>
+<!-- /底部 -->
+</body>
+</html>
+
+

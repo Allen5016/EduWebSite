@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <include file="Public/head"/>
+</head>
+<body>
+<!-- 头部 -->
+<include file="Public/header"/>
+<!-- /头部 -->
+
+        <!--校区详情模块-->
+        <div class="page">
+            <div class="main">
+
+
+                <!--导航菜单开始-->
+                <include file="Public/menu"/>
+                <!--导航菜单结束-->
+
+                <!--左侧模块-->
+                <div class="main">
+                    <div class="school_detail">
+                        <dt>
+                        <div id="fsD1" class="focus">
+                            <div id="D1pic1" class="fPic">
+                                <div class="fcon" style="display: block;">
+                                    <img src="{$data[0]['headPic']}" style="opacity: 1;">
+                                </div>
+                            </div>
+                        </div>
+                        </dt>
+                        <dd>
+                            <h5>{$data[0]['name']}</h5>
+                            <p>
+                                <em>联系方式：</em>{$data[0]['phone']}
+                            </p>
+                            <p>
+                                <em>校区地址：</em>{$data[0]['address']}
+                            </p>
+                            <p>
+                                <em>营业时间：</em>{$data[0]['businessHours']}
+                            </p>
+                        </dd>
+                    </div>
+                </div>
+
+                <!--交通指南-->
+                <div class="col-layleft">
+                    <div class="traffic">
+                        <h5><span class="title">交通指南</span></h5>
+                        <ul class="contents">
+                            <p style="height: 30px">
+                                <em>地标建筑：</em>
+                                {$data[0]['building']}
+                            </p>
+                            <p>
+                                <em>公交路线：</em>
+                                {$data[0]['busRoute']}
+                            </p>
+                            <p>
+                                <em>地铁路线：</em>
+                                　{$data[0]['metroRoute']}
+                            </p>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--右侧模块-->
+                <div class="col-right">
+                    <div class="map_school" id="CenterMap">
+                        <h3>其他校区</h3>
+                    </div>
+                    <div class="campus">
+                        <ul class="contents" >
+                            <li>
+                                <a class="img" href="{:U('info',array('id'=>$other['id']))}" target="_blank"><img src="{$other['headPic']}"></a>
+                                <a class="title" href="{:U('info',array('id'=>$other['id']))}" target="_blank">{$other['name']}</a>
+                            </li>
+                        </ul>
+                        <a class="smore" href="{:U('index')}">更多</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+<include file="Public/friendship"/>
+<include file="Public/navigation"/>
+
+<!-- 底部 -->
+<include file="Public/footer"/>
+<!-- /底部 -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
