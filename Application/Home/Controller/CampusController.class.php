@@ -60,4 +60,5 @@ class CampusController extends HomeController
         else
             $this->display("../wap/Campus/info");
     }
+
 }

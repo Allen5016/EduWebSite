@@ -1,1 +1,73 @@
-2222
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>尚学教育</title>
+    <include file="wap/Public/header"/>
+
+</head>
+<body>
+<section class="layout pt88">
+
+    <include file="wap/Public/head"/>
+    <div  style="width: 375px;height: 163px;">
+        <img src="{$data[0]['headPic']}">
+    </div>
+
+        <!-- Add Pagination -->
+
+    <section class="school-list-txt">
+        <ul>
+            <li class="item1">
+                <dl>
+                    <dt>{$data[0]['name']} <div class="right">
+
+                    <a href="http://api.map.baidu.com/place/search?query={$data[0]['address']}&amp;radius=200&amp;region=福州市&amp;output=html" target="_blank">
+                        百度地图<span class="map-icon"></span>
+                    </a></div></dt>
+                    <dd>
+                        <i class="icon-addr"></i>
+                        <span class="tit">地址:</span>
+                        <span class="txt">{$data[0]['address']}</span>
+                    </dd>
+                    <dd>
+                        <i class="icon-tal"></i>
+                        <span class="tit">联系方式:</span>
+                        <span class="txt">{$data[0]['phone']}</span>
+                    </dd>
+                    <dd>
+                        <i class="icon-clock"></i>
+                        <span class="tit">营业时间:</span>
+                        <span class="txt">{$data[0]['businessHours']}</span>
+                    </dd>
+                </dl>
+            </li>
+            <li class="item2">
+                <dl>
+                    <dt>交通指南</dt>
+                    <dd>
+                        <i class="icon-jt"></i>
+                        <span class="tit">地标建筑:</span>
+                        <span class="txt">{$data[0]['building']}</span>
+                    </dd>
+                    <dd>
+                        <i class="icon-dt"></i>
+                        <span class="tit">地铁路线:</span>
+                        <span class="txt">{$data[0]['metroRoute']}</span>
+                    </dd>
+                    <dd>
+                        <i class="icon-xl"></i>
+                        <span class="tit">交通路线:</span>
+                        <span class="txt">{$data[0]['busRoute']}</span>
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+    </section>
+</section>
+
+
+
+</body>
+</html>
