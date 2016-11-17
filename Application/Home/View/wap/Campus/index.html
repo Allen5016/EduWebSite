@@ -1,1 +1,55 @@
-222
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>尚学教育</title>
+    <include file="wap/Public/header"/>
+
+</head>
+<body>
+<section class="layout pt88">
+
+    <include file="wap/Public/head"/>
+
+    <section class="top-nav js-nav">
+        <ul>
+            <li>
+                <h3><span>区域</span><i class="arrow"></i></h3>
+                <dl>
+                    <dd class="on"><a class="search_link" href="/campus/0-1.html">不限</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </section>
+    <hr class="line">
+
+    <article class="school-list">
+        <ul>
+            <volist name="data" id="vo">
+            <li>
+                <div class="img">
+                    <a href="{:U('info',array('id'=>$vo['id']))}"><img src="{$vo['headPic']}"></a>
+                </div>
+                <div class="text">
+                    <a href="{:U('info',array('id'=>$vo['id']))}" >
+                        <dl>
+                            <dt>{$vo['name']}</dt>
+                            <dd><i class="icon-addr"></i><span>{$vo['address']}（南方电网斜对面）</span></dd>
+                            <dd><i class="icon-tal"></i>{$vo['phone']}</dd>
+                        </dl>
+                        <i class="icon-tag">福州市</i>
+                    </a>
+                </div>
+            </li>
+            </volist>
+        </ul>
+    </article>
+
+    <include file="wap/Public/copyright"/>
+    <include file="wap/Public/footer"/>
+
+</section>
+
+
+</body>
+</html>
